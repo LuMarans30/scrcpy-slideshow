@@ -3,7 +3,7 @@
 theme: seriph
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
-background: /assets/cover.webp
+background: https://raw.githubusercontent.com/LuMarans30/scrcpy-slideshow/refs/heads/master/assets/cover.webp
 # some information about your slides (markdown enabled)
 title: scrcpy
 info: Slideshow for scrcpy
@@ -59,7 +59,7 @@ overviewSnapshots: true
 
 ---
 layout: image-right
-image: /assets/scrcpy.webp
+image: https://raw.githubusercontent.com/LuMarans30/scrcpy-slideshow/refs/heads/master/assets/scrcpy.webp
 backgroundSize: contain
 ---
 
