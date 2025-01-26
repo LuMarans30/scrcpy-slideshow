@@ -49,33 +49,19 @@ overviewSnapshots: true
 <style>
   #subtitle {
     font-size: 28px;
-    font-weight: lighter;
+    font-weight: light;
   }
 </style>
 
 ---
 
+# Indice
+
 <Toc minDepth="1" maxDepth="2" />
 
 ---
-layout: image-right
-image: https://raw.githubusercontent.com/LuMarans30/scrcpy-slideshow/refs/heads/master/assets/scrcpy.webp
-backgroundSize: contain
+src: pages/funzionalita.md
 ---
-
-# Funzionalità
-
-<strong>scrcpy</strong> è un tool CLI che consente di interagire con un dispositivo Android da un computer. <br /> <br />
-Consente la condivisione di alcune periferiche del PC con il dispositivo Android e viceversa. <br /> <br />
-I principali parametri del comando sono:
-- `-K`  (`--keyboard`)
-- `-M`  (`--mouse`)
-- `-n`  (`--no-control`)
-- `--otg`
-- `-p`  (`--port`); Default range 27183:27199
-- `-r`  (`--record`)
-- `-W`  (`--stay-awake`)
-- `-S`  (`--turn-screen-off`)
 
 ---
 src: pages/ADB.md
@@ -86,39 +72,5 @@ src: pages/autoadb.md
 ---
 
 ---
-layout: two-cols
+src: pages/demo.md
 ---
-
-<ScrcpyWebcam width="540px" height="1170px"/>
-
-::right::
-
-```html
-<template>
-    <video id="scrcpy-webcam" autoplay muted></video>
-    <button id="start-button">Avvia stream V4L</button>
-</template>
-```
-
-```ts twoslash
-  let button = document.getElementById('start-button');
-  let video = document.getElementById('scrcpy-webcam') as HTMLVideoElement;
-  button?.addEventListener('click', function() {
-      const facingMode = "environment"; // Webcam frontale: "user", Altra webcam: "environment"
-      const constraints = {
-          audio: false,
-          video: {
-              facingMode: facingMode,
-              width: { ideal: 2336 },
-              height: { ideal: 1080 },
-          }
-      };
-      navigator.mediaDevices.getUserMedia(constraints)
-          .then(stream => {
-              video.srcObject = stream;
-          })
-          .catch(error => {
-              console.error("Error accessing the camera", error);
-          });
-  })
-```
