@@ -96,7 +96,7 @@ layout: two-cols
 ```html
 <template>
     <video id="scrcpy-webcam" autoplay muted></video>
-    <button id="start-button">Start stream</button>
+    <button id="start-button">Avvia stream V4L</button>
 </template>
 ```
 
