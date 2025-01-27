@@ -1,3 +1,7 @@
+---
+title: Esempio Pratico
+---
+
 # Esempio: Video4Linux + AutoAdb
 
 ````md magic-move

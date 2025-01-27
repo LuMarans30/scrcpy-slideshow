@@ -7,11 +7,18 @@ Si può dividere in tre componenti principali:
 - **Server** - Il server gira sul PC sulla porta 5037, e gestisce la comunicazione tra client e demone
 - **Client** - Il client gira anch'esso sul PC. Invia i comandi inseriti dall'utente alle API del server
 
+Alcuni comandi ADB utili:
+- `adb devices`
+- `adb tcpip <port>`
+- `adb pair <ip>:<port> <pairing code>`
+- `adb shell`
+- `adb push <local file> <remote file>`
+- `adb pull <remote file> <local file>`
+
 <style>
 h1 {
   background-color: #2B90B6;
   background-image: linear-gradient(45deg, #54B052 10%, #3B7B39 20%);
-  background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
