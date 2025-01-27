@@ -1,6 +1,6 @@
 ---
 layout: image-right
-image: https://raw.githubusercontent.com/LuMarans30/scrcpy-slideshow/refs/heads/master/assets/scrcpy.webp
+image: https://raw.githubusercontent.com/LuMarans30/scrcpy-slideshow/refs/heads/master/assets/example.webp
 backgroundSize: contain
 ---
 
