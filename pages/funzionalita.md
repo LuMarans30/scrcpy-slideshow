@@ -8,11 +8,11 @@ backgroundSize: contain
 
 <strong>[Scrcpy](https://github.com/Genymobile/scrcpy)</strong> è un tool CLI che ci consente di controllare un dispositivo Android da un computer tramite ADB. <br /> <br />
 Consente la condivisione di alcune periferiche del PC con il dispositivo Android e viceversa. <br /> <br />
-I principali parametri del comando sono:
+I principali parametri di scrcpy sono:
 - `-K`  (`--keyboard`)
 - `-M`  (`--mouse`)
 - `--otg`
-- `-p`  (`--port`); Default range 27183:27199
+- `--new-display=<width>x<height>`
 - `-r`  (`--record`)
 - `-W`  (`--stay-awake`)
 - `-S`  (`--turn-screen-off`)

@@ -1,6 +1,6 @@
 # ADB: Android Debugging Bridge
 
-ADB è uno tool CLI sviluppato da Google che permette di comunicare con un dispositivo Android.
+ADB è un tool CLI sviluppato da Google che comunica con un dispositivo Android.
 
 Si può dividere in tre componenti principali:
 - **Daemon** - adbd, il demone di adb, è un processo che gira sul dispositivo Android
@@ -9,8 +9,8 @@ Si può dividere in tre componenti principali:
 
 Alcuni comandi ADB utili:
 - `adb devices`
-- `adb tcpip <port>`
 - `adb pair <ip>:<port> <pairing code>`
+- `adb tcpip <port>`
 - `adb shell`
 - `adb push <local file> <remote file>`
 - `adb pull <remote file> <local file>`
@@ -28,9 +28,10 @@ h1 {
 
 ---
 level: 2
+title: Sequence Diagram
 ---
 
-# Sequence Diagram
+# Sequence Diagram di ADB
 
 ```mermaid
 sequenceDiagram
